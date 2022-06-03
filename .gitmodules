@@ -1,0 +1,3 @@
+[submodule "DroidCore"]
+	path = DroidCore
+	url = git@github.com:Roxkax/DroidCore.git
