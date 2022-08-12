@@ -16,5 +16,4 @@ rootProject.name = "DroidSamples"
 
 include ':app'
 
-include ':DroidCore'
-project(":DroidCore").projectDir = file("../DroidCore")
+includeFlat 'DroidCore'
