@@ -1,4 +1,4 @@
-package com.roxkax.droidsamples.ui
+package com.roxkax.droidsamples.ui.home
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -8,10 +8,7 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import javax.inject.Inject
 
 @HiltViewModel
-class MainViewModel @Inject constructor(val dialogService: IDialogService) : BaseViewModel() {
-
-
-    val user get() = "test-tetsts"
+class HomeViewModel @Inject constructor(val dialogService: IDialogService) : BaseViewModel() {
 
     private val list: MutableLiveData<List<Int>> by lazy {
         MutableLiveData<List<Int>>().also {

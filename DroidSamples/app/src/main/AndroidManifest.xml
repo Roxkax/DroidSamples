@@ -5,20 +5,21 @@
     <application
         android:name=".DroidSamplesApplication"
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@drawable/ic_logo"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/ic_logo"
         android:supportsRtl="true"
         android:theme="@style/Theme.DroidSamples">
         <activity
-            android:name=".ui.MainActivity"
-            android:exported="true">
+            android:name=".ui.splash.SlashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.DroidSamples.Launcher">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".ui.home.HomeActivity" />
     </application>
 
 </manifest>
